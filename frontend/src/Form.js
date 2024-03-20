@@ -76,8 +76,12 @@ function Form() {
       consonant: consonant || " ",
     };
     const params = new URLSearchParams(data);
-    console.log(`http://127.0.0.1:3001/${params.toString()}`);
-    const response = await fetch(`http://127.0.0.1:3001/${params.toString()}`);
+    console.log(
+      `https://that-one-word-at-the-tip-of-my-tongue.onrender.com/${params.toString()}`
+    );
+    const response = await fetch(
+      `https://that-one-word-at-the-tip-of-my-tongue.onrender.com/${params.toString()}`
+    );
     const result = await response.json();
     setResult(result);
     console.log(result);
