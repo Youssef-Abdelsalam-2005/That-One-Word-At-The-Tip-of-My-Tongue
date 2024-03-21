@@ -126,3 +126,15 @@ button:hover {
     width: 30vw;
   }
 }
+
+@media (pointer: none), (pointer: coarse) {
+  form {
+    height: 127vh;
+  }
+  #output {
+    height: 55vh;
+  }
+  button {
+    width: 30vw;
+  }
+}
