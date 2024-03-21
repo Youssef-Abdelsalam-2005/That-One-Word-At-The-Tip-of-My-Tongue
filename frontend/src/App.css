@@ -2,7 +2,7 @@ body {
   font-family: "Red Hat Mono", monospace;
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #header {
@@ -21,8 +21,8 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 43vh;
+  width: 100vw;
+  height: 400px;
   flex-wrap: wrap;
   padding: 1vw;
 }
@@ -103,24 +103,24 @@ button:hover {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 35vh;
+  height: 300px;
 }
 
 @media only screen and (max-width: 900px) {
-  body {
-    overflow-y: auto;
-  }
   form {
-    height: 67vh;
+    height: 630px;
+  }
+  #output {
+    height: 550px;
   }
 }
 
 @media only screen and (max-width: 650px) {
   form {
-    height: 127vh;
+    height: 100%;
   }
   #output {
-    height: 55vh;
+    height: 800px;
   }
   button {
     width: 30vw;
@@ -129,10 +129,10 @@ button:hover {
 
 @media (pointer: none), (pointer: coarse) {
   form {
-    height: 127vh;
+    height: 100%;
   }
   #output {
-    height: 55vh;
+    height: 800px;
   }
   button {
     width: 30vw;
