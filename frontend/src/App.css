@@ -26,7 +26,7 @@ form {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 400px;
+  height: 420px;
   flex-wrap: wrap;
   padding: 1vw;
 }
@@ -92,7 +92,6 @@ button {
   padding: 1vw 2vw;
   border: none;
   border-radius: 1vw;
-
   transition: background-color 0.3s ease;
 }
 
